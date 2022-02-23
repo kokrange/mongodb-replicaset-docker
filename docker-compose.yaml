@@ -8,7 +8,7 @@ services:
     ports:
       - 27010:27017
     volumes:
-      - /Users/ricepo/Downloads/mongo/data/rs0-0:/data/db
+      - ./data/rs0-0:/data/db
     restart: always
     entrypoint: ["/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0"]
     healthcheck:
@@ -24,7 +24,7 @@ services:
     ports:
       - 27011:27017
     volumes:
-      - /Users/ricepo/Downloads/mongo/data/rs0-1:/data/db
+      - ./data/rs0-1:/data/db
     restart: always
     entrypoint: ["/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0"]
     healthcheck:
@@ -40,7 +40,7 @@ services:
     ports:
       - 27012:27017
     volumes:
-      - /Users/ricepo/Downloads/mongo/data/rs0-2:/data/db
+      - ./data/rs0-2:/data/db
     restart: always
     entrypoint: ["/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0"]
     healthcheck:
