@@ -1,6 +1,10 @@
 # Deploy Mongo ReplicaSet
 
 ./deploy
+### or manually
+1. copy setup/replicaSet.copy -> setup/replicaSet.js
+2. change <HOST_NETWORK_IP> in setup/replicaSet.js
+3. docker-compose up -d --build
 
 ## GUI
 
