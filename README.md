@@ -8,7 +8,7 @@
 ```bash
 docker-compose up -d --build
 ```
-## restart(If HOST_NETWORK_IP change)
+## restart(if HOST_NETWORK_IP changes)
 1. change ip = "New IP" in setup/replicaSetReconfig.js
 ```bash
 docker-compose down && docker-compose up -d --build
