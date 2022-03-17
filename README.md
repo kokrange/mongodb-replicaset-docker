@@ -22,4 +22,4 @@ mongodb://host_ip:27010,host_ip:27011,host_ip:27012/?replicaSet=rs0
 ```bash
 docker-compose down
 sudo rm -rf ./data
-```bash
+```
