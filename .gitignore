@@ -1,3 +1,4 @@
 data/
 
 setup/replicaSet.js
+setup/replicaSetReconfig.js

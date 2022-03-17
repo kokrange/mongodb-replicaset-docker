@@ -1,0 +1,9 @@
+ip = "<HOST_NETWORK_IP>";
+
+cfg = rs.conf();
+
+cfg.members[0].host = `${ip}:27010`;
+cfg.members[1].host = `${ip}:27011`;
+cfg.members[2].host = `${ip}:27012`;
+
+rs.reconfig(cfg, { force: true });
