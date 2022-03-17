@@ -16,7 +16,6 @@ if [[ "$cn" == "NotYetInitialized" ]]; then
 else
     echo "==> Reconfig ..."
     while true; do
-
         host0=$(echo "rs.conf().members[0].host" | mongo mongodb://mongo-rs0-0:27017 --quiet)
         if [[ "${host0}" == *"27010"* ]]; then
             break
