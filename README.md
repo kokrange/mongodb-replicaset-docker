@@ -1,16 +1,21 @@
 # Deploy Mongo ReplicaSet
 
 ## start
-1. copy setup/replicaSet.copy -> setup/replicaSet.js
-2. change <HOST_NETWORK_IP> in setup/replicaSet.js
-3. copy setup/replicaSetReconfig.copy -> setup/replicaSetReconfig.js
-4. change <HOST_NETWORK_IP> in setup/replicaSetReconfig.js
+ 
+```bash
+cp setup/replicaSet.copy setup/replicaSet.js
+cp setup/replicaSetReconfig.copy setup/replicaSetReconfig.js
+```
+Change <HOST_NETWORK_IP> in setup/replicaSet.js & setup/replicaSetReconfig.js both.
+
 ```bash
 docker-compose up -d --build
 ```
 ## restart(if HOST_NETWORK_IP changes)
-1. copy setup/replicaSetReconfig.copy -> setup/replicaSetReconfig.js
-2. change <HOST_NETWORK_IP> in setup/replicaSetReconfig.js
+```bash
+cp setup/replicaSetReconfig.copy setup/replicaSetReconfig.js
+```
+Change <HOST_NETWORK_IP> in setup/replicaSetReconfig.js.
 ```bash
 docker-compose down && docker-compose up -d --build
 ```
